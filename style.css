@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e45e2 0%, #88d3ce 100%);
+}
+
+form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    transform: scale(1);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.05);
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+label {
+    width: 30%;
+    text-align: left;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    font-size: 1.5em;
+    border-bottom: 2px solid #6e45e2;
+    padding-bottom: 10px;
+}
+
+input[type="text"], input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 0.9em;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="file"]:focus {
+    border: 1px solid #6e45e2;
+}
+
+input[type="submit"] {
+    background-color: #6e45e2;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+input[type="submit"]:hover {
+    background-color: #88d3ce;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+input[type="file"] {
+    padding: 10px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.result-card {
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    width: 350px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-card img {
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.result-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.result-card strong {
+    font-weight: 600;
+}
