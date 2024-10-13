@@ -15,7 +15,7 @@ function displayForm() {
 
     // buat heading
     const heading = document.createElement('h2');
-    heading.textContent = 'Tugas-2 Praktikum Pemrograman Web';
+    heading.textContent = 'Form Data Diri';
 
     // label dan input
     function createFormGroup(labelText, inputType, inputPlaceholder) {
